@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hi Crush!</title>
+</head>
+<body>
+  <h1>Can we hang out soon?</h1>
+  <img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+  
+  <button id="clik1">YES</button>
+  <button id="clik2">NO</button>
+  
+  <script>
+    // JavaScript for button animation
+    const button2 = document.getElementById('clik2');
+    let right = 41;
+    button2.addEventListener('mouseover', function() {
+      if (right == 41) {
+        right = 7;
+      } else {
+        right = 41;
+      }
+      this.style.right = right + '%';
+    });
+  
+    // JavaScript for button click
+    document.getElementById('clik1').addEventListener('click', function() {
+      alert('YAY THANK U 😍❤️');
+    });
+  </script>
+</body>
+</html>
